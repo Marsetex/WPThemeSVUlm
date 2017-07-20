@@ -1,8 +1,10 @@
 # WPThemeSVUlm
 A wordpress theme for the club SV Ulm.
+http://sv-ulm.de/
 
 # Credits
 This theme is based on "WP Bootstrap Starter".
+https://de.wordpress.org/themes/wp-bootstrap-starter/
 
 === WP Bootstrap Starter ===
 

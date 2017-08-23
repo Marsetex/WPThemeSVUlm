@@ -9,40 +9,56 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
-		<main id="main" class="site-main" role="main">
+	<div id="content" class="site-content">
+		<div class="container">
+			<div class="row">
 
-		<?php
-		if ( have_posts() ) : ?>
+				<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
+					<main id="main" class="site-main" role="main">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'wp-bootstrap-starter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+					<?php
+					if ( have_posts() ) : ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+						<header class="page-header">
+							<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'wp-bootstrap-starter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+						</header><!-- .page-header -->
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+						<div class="page-content" style="margin-bottom: 15px;">
+							<p><?php esc_html_e( 'Nicht das passende gefunden?', 'wp-bootstrap-starter' ); ?></p>
 
-			endwhile;
+							<?php
+								get_search_form();
+							?>
+						</div><!-- .page-content -->
+						
+						<?php
+						/* Start the Loop */
+						while ( have_posts() ) : the_post();
 
-			the_posts_navigation();
+							/**
+							 * Run the loop for the search to output the results.
+							 * If you want to overload this in a child theme then include a file
+							 * called content-search.php and that will be used instead.
+							 */
+							get_template_part( 'template-parts/content', 'search' );
 
-		else :
+						endwhile;
 
-			get_template_part( 'template-parts/content', 'none' );
+						the_posts_navigation();
 
-		endif; ?>
+					else :
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+						get_template_part( 'template-parts/content', 'none' );
 
+					endif; ?>
+
+					</main><!-- #main -->
+				</section><!-- #primary -->
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- #content -->
+	
+	
 <?php
-get_sidebar();
 get_footer();

@@ -1,14 +1,14 @@
 /*!
-Theme Name: SV Ulm Theme
+Theme Name: SV Ulm 1948 Theme
 Theme URI: http://sv-ulm.de
 Author: Marcel Gruessinger
 Author URI: http://marse.square7.ch
 Description: A theme especially created for the club SV Ulm. It is based on the theme "WP Bootstrap Starter", which is created by Automattic.
-Version: 2.3.3
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: wp-bootstrap-starter
-Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+Tags: blog, custom-menu, featured-images, right-sidebar, custom-background, theme-options, sticky-post, full-width-template
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -34,9 +34,65 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 # Woocommerce
 # Footer
 --------------------------------------------------------------*/
+
+.btn-circle {
+	width: 49px;
+	height: 49px;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 20px;
+	line-height: 2.00;
+	border-radius: 30px;
+}
+
+.footer-spacer {
+	margin-right: 10px;	
+}
+
+.btn-facebook,.btn-facebook:focus {
+	background-color: #3b579d;
+	color: white;
+}
+
+.btn-facebook:hover  {
+	background-color: white;
+	color: #3b579d;
+}
+
+.btn-contact,.btn-contact:focus {
+	background-color: #16a085;
+	color: white;
+}
+
+.btn-contact:hover {
+	background-color: white;
+	color: #16a085;
+}
+
+#headerImage {
+	width: 100%;
+    height: auto;
+	min-height: 150px;
+    max-height: 350px;
+}
+
+#headerBackground {
+	width:100%;	
+	
+}
+
+#logo {
+	max-width: 100px;
+	height: auto;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+html {
+	margin: 0px;
+}
+
 body {
   margin: 0;
 }
@@ -251,6 +307,7 @@ table {
 header#masthead {
   box-shadow: 0 0 2px -1px #333;
   margin-bottom: 0;
+  background-color: #2c3e50;
 }
 
 .navbar-brand > a {
@@ -265,15 +322,8 @@ header#masthead {
 }
 
 div#page-sub-header {
-  padding: 30px 0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  background-color: #563d7c;
-  color: #cdbfe3;
-  padding: 4rem 15px;
-  text-align: center;
-  font-size: 20px;
-  background-size: cover;
+  width: 100%;
+  height: 250px;
 }
 
 div#page-sub-header h1 {
@@ -318,13 +368,13 @@ div#page-sub-header p {
 }
 
 #masthead .navbar-nav > li > a {
-  color: #8e869d;
+  color: white;
   padding: 8px;
 }
 
 #masthead .navbar-nav > li > a:hover {
-  color: #292b2c;
-  /*background: #f9f9f9;*/
+  color: #2c3e50;
+  background: white;
 }
 
 .navbar-brand {
@@ -386,7 +436,7 @@ div#page-sub-header p {
   }
 
   .dropdown-menu li a {
-    padding: 0;
+    padding: 15px;
   }
 
   #masthead .navbar-nav > li > a {
@@ -567,6 +617,11 @@ div#page-sub-header p {
 #content.site-content {
   padding-bottom: 60px;
   padding-top: 66px;
+}
+
+#content.site-content-no-bottom-padding {
+	padding-bottom: 0px;	
+	padding-top: 66px;
 }
 
 .sticky .entry-title::before {
@@ -750,21 +805,6 @@ object {
 /*--------------------------------------------------------------
 # Plugin Compatibility
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Woocommerce
---------------------------------------------------------------*/
-.woocommerce-cart-form .shop_table .coupon .input-text {
-  width: 133px !important;
-}
-
-.variations_form .variations .value > select {
-  margin-bottom: 10px;
-}
-
-.woocommerce-MyAccount-content .col-1,
-.woocommerce-MyAccount-content .col-2 {
-  max-width: 100%;
-}
 
 /*--------------------------------------------------------------
 ## Elementor
@@ -773,28 +813,12 @@ object {
   display: none;
 }
 
-.elementor-page.page-template-fullwidth #content.site-content {
+/*.elementor-page.page-template-fullwidth #content.site-content {
   padding-bottom: 0;
   padding-top: 0;
-}
+}*/
 
 .elementor-page .entry-content {
-  margin-top: 0;
-}
-
-/*--------------------------------------------------------------
-## Visual Composer
---------------------------------------------------------------*/
-.vc_desktop article .entry-footer {
-  display: none;
-}
-
-.vc_desktop #content.site-content {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
-.vc_desktop .entry-content {
   margin-top: 0;
 }
 
@@ -802,20 +826,15 @@ object {
 # Footer
 --------------------------------------------------------------*/
 footer#colophon {
-  background: #2a2730 none repeat scroll 0 0;
-  color: #99979c;
-  padding: 20px 0;
-  text-align: center;
+  background: #2c3e50 none repeat scroll 0 0;
+  color: white;
+  padding: 35px 0;
 }
 
 .copyright {
   font-size: 14px;
   margin-bottom: 0;
   text-align: center;
-}
-
-.copyright a, footer#colophon a {
-  color: inherit;
 }
 
 @media screen and (max-width: 767px) {

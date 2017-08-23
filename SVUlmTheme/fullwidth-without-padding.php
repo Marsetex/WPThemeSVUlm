@@ -1,24 +1,15 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WP_Bootstrap_Starter
+* Template Name: Full Width Without Padding
  */
 
 get_header(); ?>
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content-no-bottom-padding">
 		<div class="container">
 			<div class="row">
 
-				<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
+				<section id="primary" class="content-area col-sm-12">
 					<main id="main" class="site-main" role="main">
 
 						<?php
@@ -36,11 +27,9 @@ get_header(); ?>
 
 					</main><!-- #main -->
 				</section><!-- #primary -->
-				<?php get_sidebar(); ?>
-				
 			</div><!-- .row -->
-		</div><!-- .container -->
-	</div><!-- #content -->
+		</div><!-- #content -->
+	</div><!-- .container -->
 	
 <?php
 get_footer();

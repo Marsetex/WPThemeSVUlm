@@ -10,22 +10,20 @@
  */
 
 ?>
-<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container">
-            <div class="site-info">
-                &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
-                <span class="sep"> | </span>
-                <a class="credits" href="http://afterimagedesigns.com/wp-bootstrap-starter/" target="_blank" title="Wordpress Bootstrap" alt="Wordpress Bootstrap"><?php echo esc_html__('Wordpress Bootstrap','wp-bootstrap-starter'); ?></a>
-
-            </div><!-- close .site-info -->
+		<div class="container" style="height: 50px">
+			
+			<div style="float:left; line-height: 50px; height: 100%;">&copy; <?php echo date('Y'); ?> SV Ulm 1948</div>
+			
+			<div style="float:right;">
+				<div style="float:left; line-height: 50px; height: 100%;" class="footer-spacer"><a style="color: white;" href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a></div>
+				<div style="float:left; " class="footer-spacer"><a href="https://www.facebook.com/SVU1948/" target="_blank" class="btn btn-circle btn-facebook"><span class="fa fa-facebook-square" aria-hidden="true"></span></a></div>
+				<div style="float:left;"><a href="mailto:GWaffenschmidt@gmx.de" target="_top" class="btn btn-circle btn-contact"><span class="fa fa-envelope" aria-hidden="true"></span></a></div>
+				<div style="clear:both"></div>
+			</div>
+			<div style="clear:both"></div>
 		</div>
 	</footer><!-- #colophon -->
-<?php endif; ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

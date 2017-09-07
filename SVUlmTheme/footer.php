@@ -16,9 +16,22 @@
 			<div style="float:left; line-height: 50px; height: 100%;">&copy; <?php echo date('Y'); ?> SV Ulm 1948</div>
 			
 			<div style="float:right;">
-				<div style="float:left; line-height: 50px; height: 100%;" class="footer-spacer"><a style="color: white;" href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a></div>
-				<div style="float:left; " class="footer-spacer"><a href="https://www.facebook.com/SVU1948/" target="_blank" class="btn btn-circle btn-facebook"><span class="fa fa-facebook-square" aria-hidden="true"></span></a></div>
-				<div style="float:left;"><a href="mailto:GWaffenschmidt@gmx.de" target="_top" class="btn btn-circle btn-contact"><span class="fa fa-envelope" aria-hidden="true"></span></a></div>
+				<div style="float:left;" class="footer-spacer">
+					<a href="https://www.facebook.com/SVU1948/" target="_blank" class="btn btn-circle btn-facebook">
+						<span class="fa fa-facebook-square" aria-hidden="true"></span>
+					</a>
+				</div>
+				<div style="float:left;" class="footer-spacer">
+					<a href="mailto:GWaffenschmidt@gmx.de" target="_top" class="btn btn-circle btn-contact">
+						<span class="fa fa-envelope" aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div style="float:left;">
+					<a class="btn btn-circle btn-facebook" href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">
+						<span class="fa fa-info" aria-hidden="true"></span>
+					</a>
+				</div>
 				<div style="clear:both"></div>
 			</div>
 			<div style="clear:both"></div>

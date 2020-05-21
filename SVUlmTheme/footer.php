@@ -13,12 +13,17 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container" style="height: 50px">
 			
-			<div style="float:left; line-height: 50px; height: 100%;">&copy; <?php echo date('Y'); ?> SV Ulm 1948</div>
+			<div style="float:left; line-height: 50px; height: 100%;">&copy; <?php echo date('Y'); ?> - SV Ulm 1948</div>
 			
 			<div style="float:right;">
 				<div style="float:left;" class="footer-spacer">
 					<a href="https://www.facebook.com/SVU1948/" target="_blank" class="btn btn-circle btn-facebook">
-						<span class="fa fa-facebook-square" aria-hidden="true"></span>
+						<span class="fa fa-facebook-f" aria-hidden="true"></span>
+					</a>
+				</div>
+				<div style="float:left;" class="footer-spacer">
+					<a href="https://www.instagram.com/svulm1948/" target="_blank" class="btn btn-circle btn-ins">
+						<span class="fa fa-instagram" aria-hidden="true"></span>
 					</a>
 				</div>
 				<div style="float:left;" class="footer-spacer">
@@ -27,8 +32,14 @@
 					</a>
 				</div>
 
+				<div style="float:left;" class="footer-spacer">
+					<a class="btn btn-circle btn-datenschutz" href="<?php echo esc_url(get_permalink(get_page_by_title('Datenschutzerklärung'))); ?>">
+						<span class="fa fa-book" aria-hidden="true"></span>
+					</a>
+				</div>
+				
 				<div style="float:left;">
-					<a class="btn btn-circle btn-facebook" href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">
+					<a class="btn btn-circle btn-impressum" href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">
 						<span class="fa fa-info" aria-hidden="true"></span>
 					</a>
 				</div>

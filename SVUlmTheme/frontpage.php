@@ -19,13 +19,9 @@
 	<div id="headerBackground">
 		<?php if (has_post_thumbnail( $post->ID ) && !is_single()): ?>
 			<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-			<div class="parent">
-				<div class="image1"><img src="<?php echo $image[0]; ?>"></div>
-				<!--<div class="image2"><img src="<?php echo get_theme_mod( 'wp_bootstrap_starter_logo' ); ?>"></div>				
-				<div class="image3">SV Ulm 1948</div>-->
-			</div>
+			<img style="width: 100%" src="<?php echo $image[0]; ?>"/>
 		<?php else: ?>
-			<img src="<?php header_image(); ?>"/>
+			<img style="width: 100%" src="<?php header_image(); ?>"/>
 		<?php endif; ?>
 	</div>
 	<header id="masthead" class="site-header navbar-static-top" role="banner">	
